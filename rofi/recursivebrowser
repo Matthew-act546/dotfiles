@@ -1,0 +1,9 @@
+FILE="$1"   # or however your script passes the selected file
+EXT="${FILE##*.}"
+
+case "$EXT" in
+    png|jpg|jpeg|gif) sxiv "$FILE" ;;     # images open in sxiv
+    conf|txt|sh|py|json) nvim "$FILE" ;; # configs/text open in nvim
+    *) xdg-open "$FILE" ;;                # everything else opens with default
+esac
+

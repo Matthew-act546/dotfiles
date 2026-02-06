@@ -1,0 +1,47 @@
+/* Backgrounds */
+@define-color sumiInk0   #16161D;
+@define-color sumiInk1   #181820;
+@define-color sumiInk2   #1F1F28;
+@define-color sumiInk3   #2A2A37;
+@define-color sumiInk4   #363646;
+
+/* Foreground */
+@define-color fujiWhite  #DCD7BA;
+@define-color oldWhite   #C8C093;
+
+/* Accents */
+@define-color waveBlue1  #223249;
+@define-color waveBlue2  #2D4F67;
+@define-color waveAqua1  #6A9589;
+@define-color waveAqua2  #7AA89F;
+
+/* Highlights */
+@define-color autumnRed  #C34043;
+@define-color autumnYellow #DCA561;
+@define-color sakuraPink #D27E99;
+@define-color springGreen #98BB6C;
+@define-color oniViolet  #957FB8;
+@define-color crystalBlue #7E9CD8;
+
+
+* {
+  color: @fujiWhite;
+}
+window#waybar {
+  background: @sumiInk2;
+  font-size: 13.5px;
+}
+
+#custom-kanagawa {
+  color: @fujiWhite;      /* Kanagawa-style blue */
+  font-size: 20px; 
+  margin-left: 10px;/* size of the glyph/emoji */
+}
+
+#modules-right {
+  margin-right: 20px;
+}
+
+#clock {
+  font-weight: bold;
+}

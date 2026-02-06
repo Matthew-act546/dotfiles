@@ -1,0 +1,23 @@
+session_name: hot-potato
+start_directory: ~/Work/Dish-It/
+
+windows:
+  - window_name: editor
+    panes:
+      - shell_command:
+          - nvim .
+
+  - window_name: server
+    panes:
+      - shell_command:
+          - npm run dev
+  
+  - window_name: shell
+    panes:
+      - shell_command:
+          - clear
+
+  - window_name: git
+    panes:
+      - shell_command:
+          - git status

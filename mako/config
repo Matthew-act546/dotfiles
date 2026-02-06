@@ -1,0 +1,43 @@
+### Font
+font=JetBrainsMono Nerd Font 10
+
+### Layout & Position
+anchor=top-center
+layer=overlay
+width=400
+margin=13
+padding=12
+max-visible=3
+
+### Background & Text (Kanagawa)
+background-color=#1f1f28
+text-color=#dcd7ba
+
+### Border
+border-color=#DCD7BA
+border-size=2
+border-radius=10
+
+### Behavior
+default-timeout=5000
+ignore-timeout=1
+
+### Low urgency
+[urgency=low]
+markup=1
+format=<span foreground="#B0CC8F"><b>%s</b></span>\n%b
+border-color=#98BB6C
+default-timeout=3000
+
+### Normal urgency
+[urgency=normal]
+border-color=#DCD7BA
+default-timeout=5000
+
+### Critical urgency
+[urgency=critical]
+markup=1
+format=<span foreground="#D88384"><b>%s</b></span>\n%b
+border-color=#CD6062
+background-color=#1f1f28
+default-timeout=0

@@ -1,0 +1,23 @@
+session_name: laravel_PC
+start_directory: ~/Work/laravel_PC/
+
+windows:
+  - window_name: editor
+    panes:
+      - shell_command:
+          - nvim .
+
+  - window_name: server
+    panes:
+      - shell_command:
+          - composer run dev
+  
+  - window_name: shell
+    panes:
+      - shell_command:
+          - clear
+
+  - window_name: git
+    panes:
+      - shell_command:
+          - git status
